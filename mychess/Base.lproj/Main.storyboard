@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mychess" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fbh-Na-uyC">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" id="r55-p5-T1G" customClass="RoomCell" customModule="mychess" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r55-p5-T1G" id="hRP-2A-cl0">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="97.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnc-t0-v9I">
+                                                    <rect key="frame" x="106" y="11" width="284" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="284" id="QN2-Zl-ckB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lv2-6x-S2J">
+                                                    <rect key="frame" x="8" y="0.0" width="90" height="84"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="Ank-RP-jOl"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS8-68-3fo">
+                                                    <rect key="frame" x="106" y="40" width="284" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bnc-t0-v9I" firstAttribute="leading" secondItem="Lv2-6x-S2J" secondAttribute="trailing" constant="8" symbolic="YES" id="0dj-hT-ANa"/>
+                                                <constraint firstItem="LS8-68-3fo" firstAttribute="leading" secondItem="Lv2-6x-S2J" secondAttribute="trailing" constant="8" symbolic="YES" id="1Ej-Nf-HLV"/>
+                                                <constraint firstItem="Bnc-t0-v9I" firstAttribute="top" secondItem="hRP-2A-cl0" secondAttribute="topMargin" constant="3" id="4i0-qe-cnZ"/>
+                                                <constraint firstItem="Bnc-t0-v9I" firstAttribute="trailing" secondItem="LS8-68-3fo" secondAttribute="trailing" id="73X-rp-vFc"/>
+                                                <constraint firstItem="Lv2-6x-S2J" firstAttribute="top" secondItem="hRP-2A-cl0" secondAttribute="top" id="YMb-93-hgO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Lv2-6x-S2J" secondAttribute="bottom" constant="5.5" id="fAC-C5-kGW"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Lv2-6x-S2J" secondAttribute="leading" id="s7A-WC-OJx"/>
+                                                <constraint firstItem="LS8-68-3fo" firstAttribute="top" secondItem="Bnc-t0-v9I" secondAttribute="bottom" constant="8" symbolic="YES" id="sVp-Bp-aQd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelImage" destination="Lv2-6x-S2J" id="SCq-Fi-TWM"/>
+                                            <outlet property="playerOne" destination="Bnc-t0-v9I" id="QWC-lm-gG8"/>
+                                            <outlet property="playerTwo" destination="LS8-68-3fo" id="z9X-Ty-1Oq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fbh-Na-uyC" secondAttribute="trailing" id="8wj-wv-62G"/>
+                            <constraint firstItem="fbh-Na-uyC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dct-y8-bVe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fbh-Na-uyC" secondAttribute="bottom" constant="20" id="KFD-bD-9Nm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fbh-Na-uyC" secondAttribute="leading" id="u4h-5s-o3K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hallTabelView" destination="fbh-Na-uyC" id="2yf-PG-u9C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="399"/>
+        </scene>
+    </scenes>
+</document>
