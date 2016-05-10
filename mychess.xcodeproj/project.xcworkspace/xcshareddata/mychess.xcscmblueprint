@@ -1,21 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E16FFDA7FCA3C05AB75C088BDE3A457FDD8593EC",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "011977FCE7643859DC00A8F91EE74436B3C00B27",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "9EBE0F29657EDED53CE7F76B8BE3D616641AF0DA" : 0,
+    "011977FCE7643859DC00A8F91EE74436B3C00B27" : 0,
     "E16FFDA7FCA3C05AB75C088BDE3A457FDD8593EC" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA3FA396-DF18-413C-80A0-5C1A4E49DA13",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "9EBE0F29657EDED53CE7F76B8BE3D616641AF0DA" : "",
+    "011977FCE7643859DC00A8F91EE74436B3C00B27" : "3DOnlionChess\/",
     "E16FFDA7FCA3C05AB75C088BDE3A457FDD8593EC" : "mychess\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "mychess",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mychess.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GoChaToken\/3DOnlionChess.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "011977FCE7643859DC00A8F91EE74436B3C00B27"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GoChaToken\/XcodeProject.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

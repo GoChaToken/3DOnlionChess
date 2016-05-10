@@ -44,9 +44,14 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         if(server.dataSource![indexPath.row][IMAGE_NAME] == waitingImage){
             print("you can enter")
             server.sendTypeFour(indexPath.row, action: "enter")
+//            
+//            let gameViewController = GameViewController()
+//            self.navigationController?.pushViewController(gameViewController, animated: true)
+
         }else{
             print("the room is full")
         }
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
